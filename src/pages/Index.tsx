@@ -8,8 +8,10 @@ const Index = () => {
   return (
     <div className="h-screen bg-spotify-black flex flex-col overflow-hidden">
       <div className="flex flex-1 min-h-0">
-        {/* Sidebar */}
-        <Sidebar />
+        {/* Sidebar - Hidden on mobile, shown on desktop */}
+        <div className="hidden md:block">
+          <Sidebar />
+        </div>
         
         {/* Main Content */}
         <div className="flex flex-col flex-1 min-h-0">

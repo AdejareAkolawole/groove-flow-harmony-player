@@ -8,14 +8,14 @@ interface PlaylistCardProps {
 
 const PlaylistCard = ({ title, description, imageUrl, size = 'medium' }: PlaylistCardProps) => {
   const sizeClasses = {
-    small: 'w-32',
-    medium: 'w-48',
-    large: 'w-56'
+    small: 'w-32 md:w-36',
+    medium: 'w-40 md:w-48',
+    large: 'w-48 md:w-56'
   };
 
   return (
-    <div className={`playlist-card group ${sizeClasses[size]} animate-fade-in`}>
-      <div className="relative mb-4 overflow-hidden rounded-md">
+    <div className={`playlist-card group ${sizeClasses[size]} animate-fade-in flex-shrink-0`}>
+      <div className="relative mb-3 md:mb-4 overflow-hidden rounded-md">
         <img
           src={imageUrl}
           alt={title}
