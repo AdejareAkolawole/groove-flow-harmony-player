@@ -86,7 +86,7 @@
   }
 
   .playlist-card {
-    @apply bg-spotify-medium-gray rounded-lg p-4 transition-all duration-300 hover:bg-spotify-light-gray group cursor-pointer;
+    @apply bg-spotify-medium-gray rounded-lg p-4 transition-all duration-300 hover:bg-spotify-light-gray cursor-pointer;
   }
 
   .music-controls {

@@ -1,5 +1,4 @@
-
-import { Heart, Shuffle, SkipBack, Play, Pause, SkipForward, Repeat, Mic2, ListMusic, Speakers, Volume2 } from 'lucide-react';
+import { Heart, Shuffle, SkipBack, Play, Pause, SkipForward, Repeat, Mic2, ListMusic, Speaker, Volume2 } from 'lucide-react';
 import { useState } from 'react';
 
 const MusicPlayer = () => {
@@ -94,7 +93,7 @@ const MusicPlayer = () => {
           <ListMusic size={16} />
         </button>
         <button className="text-spotify-text-gray hover:text-white transition-colors">
-          <Speakers size={16} />
+          <Speaker size={16} />
         </button>
         <div className="flex items-center gap-2">
           <button className="text-spotify-text-gray hover:text-white transition-colors">

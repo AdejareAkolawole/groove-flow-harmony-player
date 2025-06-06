@@ -14,7 +14,7 @@ const PlaylistCard = ({ title, description, imageUrl, size = 'medium' }: Playlis
   };
 
   return (
-    <div className={`playlist-card ${sizeClasses[size]} animate-fade-in`}>
+    <div className={`playlist-card group ${sizeClasses[size]} animate-fade-in`}>
       <div className="relative mb-4 overflow-hidden rounded-md">
         <img
           src={imageUrl}
